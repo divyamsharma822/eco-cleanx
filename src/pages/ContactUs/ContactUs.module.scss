@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.ContactUs {
+    flex-direction: column;
+    padding: 0 10%;
+    background-image: url("../../assests/contactbg.png");
+    background-color: #cccccc;
+    background-size: cover;
+    font-size: 16px;
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        font-size: 14px;
+        padding: 0 1em;
+    }
+
+    .centerContent {
+        // border: 2px solid black;
+        max-width: 1440px;
+        margin: 0 auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 576px) {
+            margin: 0em auto 0 auto;
+        }
+
+        form {
+            margin: 2em 1em;
+            background-color: white;
+            border-radius: 25px;
+            padding: 2em 4em;
+            min-width: 290px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 576px) {
+                margin: 2em 1em;
+                padding: 4em 2em;
+            }
+
+            .heading {
+                font-size: 1.6em;
+                font-weight: 700;
+                font-family: "Sora", sans-serif;
+                margin-bottom: 2em;
+            }
+
+            label {
+                font-size: 1em;
+                font-weight: 600;
+                font-family: "Sora", sans-serif;
+                margin-bottom: 0.3em;
+            }
+
+            input {
+                margin-bottom: 2em;
+                border: 1px solid #d1d1d1;
+                border-radius: 8px;
+                width: 100%;
+                padding: 10px;
+                @media (max-width: 576px) {
+                    margin-bottom: 1em;
+                }
+
+                &::placeholder {
+                    color: #9c9c9c;
+                    padding: 10px 0;
+                }
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+
+            textarea {
+                margin-bottom: 1em;
+                border: 1px solid #d1d1d1;
+                border-radius: 8px;
+                width: 100%;
+                padding: 10px;
+                resize: none;
+
+                &::placeholder {
+                    color: #9c9c9c;
+                    padding: 0;
+                }
+            }
+
+            .submitBtn {
+                background-color: #17b5e2;
+                border: none;
+                border-radius: 12px;
+                padding: 1em 2em;
+                color: white;
+                font-size: 1.2em;
+                font-weight: 600;
+                font-family: "Sora", sans-serif;
+                margin-top: 1em;
+            }
+
+            .error {
+                color: red;
+                margin-top: -1em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

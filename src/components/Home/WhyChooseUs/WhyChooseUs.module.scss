@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.WhyChooseUs {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        180deg,
+        #def8ff 0%,
+        rgba(244, 244, 244, 0) 100%
+    );
+    margin: 4em 0;
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        font-size: 12px;
+    }
+
+    .centerContent {
+        // border: 2px solid black;
+        max-width: 1440px;
+        margin: 2em auto;
+        width: 100%;
+        // padding: 0 5%;
+        @media (max-width: 576px) {
+            padding: 0 1em;
+        }
+        .heading {
+            font-family: "Sora", sans-serif;
+            font-size: 2em;
+            margin: 2em 0;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            @media (max-width: 576px) {
+                gap: 1em;
+            }
+
+            .card {
+                width: 15%;
+                // max-width: 200px;
+                min-width: 150px;
+                aspect-ratio: 1 / 1;
+                aspect-ratio: 1;
+                padding: 2em;
+                border-radius: 25px;
+                color: white;
+                font-family: "Sora", sans-serif;
+                font-size: 0.9em;
+                font-weight: 400;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 1em;
+                &:nth-child(1),
+                &:nth-child(3) {
+                    background-color: #17b5e2;
+                    border: 5px solid #41cef5;
+                }
+                &:nth-child(2),
+                &:nth-child(4) {
+                    background-color: #03303e;
+                    border: 5px solid #106e8b;
+                }
+                @media (max-width: 576px) {
+                    flex-basis: 45%;
+                    &:nth-child(1),
+                    &:nth-child(4) {
+                        background-color: #17b5e2;
+                        border: 5px solid #41cef5;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        background-color: #03303e;
+                        border: 5px solid #106e8b;
+                    }
+                }
+
+                .imgwrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        object-fit: contain;
+                        width:40%;
+                    }
+                }
+                .content {
+                    font-family: "Sora", sans-serif;
+                    font-size: 0.9em;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

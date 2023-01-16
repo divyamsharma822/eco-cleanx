@@ -1,0 +1,14 @@
+.Products {
+    flex-direction: column;
+    padding: 0 10%;
+    @media (max-width: 576px) {
+        padding: 0 1em;
+    }
+    
+    .centerContent {
+        // border: 2px solid black;
+        max-width: 1440px;
+        background-color: white;
+        margin: 1em auto;
+    }
+}

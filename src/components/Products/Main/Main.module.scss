@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.Main {
+    background-repeat: no-repeat;
+    height: calc(40vh - 50px);
+    max-height: 800px;
+    background-size: cover;
+    font-size: 1em;
+    position: relative;
+    font-size: 16px;
+
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        height: 30vh;
+    }
+
+    .centerdiv {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        flex-direction: column;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 1em;
+        position: relative;
+
+        .heading {
+            text-align: center;
+            color: rgb(10, 10, 10);
+            font-family: "Sora", sans-serif;
+            line-height: 1.3em;
+            min-width: fit-content;
+            font-size: 1.3em;
+            font-weight: 700;
+            position: relative;
+            @media (min-width: 576px) {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .subHeading {
+            text-align: center;
+            color: #4e4e4e;
+            font-family: "Sora", sans-serif;
+            line-height: 1.5em;
+            min-width: fit-content;
+            font-size: 0.95em !important;
+            font-weight: 400;
+            @media (min-width: 576px) {
+                font-size: 1.2em !important;
+            }
+        }
+        
+        .img{
+            position: absolute;
+            height: 47px;
+            top: 5px;
+            object-fit: contain;
+        }
+    }
+}

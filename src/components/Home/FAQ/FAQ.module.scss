@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    font-size: 16px;
+    margin: 10vh 0;
+
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        font-size: 12px;
+        padding: 0 1em;
+        margin: 5vh 0 10vh 0;
+    }
+
+    .centerContent {
+        // border: 2px solid black;
+        max-width: 1440px;
+        background-color: white;
+        margin: 1em auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .heading{
+            text-align: center;
+            font-family: "Sora", sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            margin: 1em 0;
+        }
+    }
+}

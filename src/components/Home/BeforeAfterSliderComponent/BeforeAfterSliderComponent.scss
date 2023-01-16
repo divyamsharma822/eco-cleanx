@@ -1,0 +1,12 @@
+.BeforeAfterSliderComponent {
+    border-radius: 20px;
+    overflow: hidden;
+    // border: 5px solid white;
+    .before-after-slider__first-photo-container,
+    .before-after-slider__second-photo-container {
+        img {
+            max-width: 500px;
+            object-fit: fill;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.Accordion {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    margin-top: 1em;
+
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        font-size: 12px;
+    }
+
+    .question {
+        color: #17b5e2;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 1.3em;
+        cursor: pointer;
+        // background-color: #20566549;
+        // border-radius: 5px;
+        // padding: 0.5em;
+    }
+
+    .answer {
+        color: white;
+        font-family: "Sora", sans-serif;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+}

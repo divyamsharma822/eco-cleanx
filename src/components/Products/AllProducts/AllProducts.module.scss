@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.AllProducts {
+    font-size: 16px;
+    margin: 4em 1em;
+
+    @media (min-width: 1441px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        font-size: 12px;
+        margin: 4em 1em;
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.8em;
+        font-family: "Sora", sans-serif;
+        gap: 1em;
+
+        @media (max-width: 576px) {
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+            text-align: center;
+            gap: 0em;
+        }
+        input[type="checkbox"] {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            cursor: pointer;
+            font-size: 15px;
+            font-family: "Sora", sans-serif;
+            width: 250px;
+            height: 50px;
+            background: rgba(235, 235, 235, 0.352);
+            display: block;
+            border-radius: 100px;
+            position: relative;
+            font-weight: 600;
+            z-index: 1;
+            color: rgba(8, 8, 8, 0.842);
+
+            .btn{
+                color: white;
+            }
+            @media (max-width: 576px) {
+                width: 160px;
+                height: 30px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        label:after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            width: 125px;
+            height: 40px;
+            background-color: rgba(23, 182, 226, 0.777);
+            border-radius: 90px;
+            transition: 0.3s;
+            z-index: -1;
+            @media (max-width: 576px) {
+                left: 5px;
+                width: 80px;
+                height: 20px;
+            }
+        }
+
+        input:checked + label {
+            background: rgba(235, 235, 235, 0.352);
+        }
+
+        input:checked + label:after {
+            left: calc(100% - 4px);
+            transform: translateX(-100%);
+            @media (max-width: 576px) {
+                left: calc(100% - 5px);
+                width: 80px;
+                height: 20px;
+            }
+        }
+
+        input:checked + label:after {
+            background-color: rgba(23, 182, 226, 0.777);
+        }
+    }
+}
